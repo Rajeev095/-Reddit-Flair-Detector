@@ -62,7 +62,7 @@ Different models analysed:
 - Decision Trees
 - Random forest
 
-![Models Trail Summary](https://github.com/Rajeev095/Reddit-Flair-Detector/blob/main/Images/train.png)
+![Models Trail Summary](https://github.com/Rajeev095/-Reddit-Flair-Detector/blob/main/Images/train.png)
 
 
 The best results were obtained using Random Forest (62.67%)
@@ -73,7 +73,7 @@ A flask application was developed in which the trained model was integrated. An 
 
 ### Deploying as a Web Service
 The application was then deployed to Heroku. 
-![Web App](https://github.com/Rajeev095/Reddit-Flair-Detector/blob/main/Images/webapp.png)
+![Web App](https://github.com/Rajeev095/-Reddit-Flair-Detector/blob/main/Images/webapp.png)
 
 ### Automated Testing
 A POST Request with key as upload_file and value as a text file consisting of URLs can be sent to https://redditflair-detector.herokuapp.com/automated_testing.
