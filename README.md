@@ -25,7 +25,7 @@ The application can be found live at [Reddit Flair Detector](https://redditflair
 0. [Deploying as a Web Service](#deploying-as-a-web-service)
 0. [Automated Testing](#automated-testing)
 
-The whole process is nicely explained with code in this [Jupyter Notebook](https://github.com/Rajeev095/Reddit-Flair-Detector/blob/master/Jupyter%20Notebooks/Reddit%20Flair%20Detector.ipynb).
+The whole process is nicely explained with code in this [Jupyter Notebook](https://github.com/Rajeev095/-Reddit-Flair-Detector/blob/main/Jupyter%20Notebooks/Reddit%20Flair%20Detector.ipynb).
 
 ### Data Acquisition
 [PRAW: The Python Reddit API Wrapper](https://praw.readthedocs.io/en/latest/) was used for extracting data. There are a number of Reddit datasets available on Bigquery and Kaggle as well. 
@@ -41,7 +41,7 @@ The following attributes made more sense in indicating the flair of a post
 ### Exploratory Data Analysis
 Initial investigations of data included analysing the data distribution amongst classes wherein an imbalanced distribution was observed. The [R]eddiquette class had low data as compared to the other classes which can result in the minority class being treated as outlier and ignored.
 
-![Imbalanced Classes](https://github.com/Gunnika/Reddit-Flair-Detector/blob/master/Images/imbalanced.png)
+![Imbalanced Classes](https://github.com/Rajeev095/Reddit-Flair-Detector/blob/main/Images/imbalanced.png)
 
 The reason for this imbalance was found to be discontinuation of the [R]eddiquette flair 7 months ago.
 The class was then dropped from the dataset
@@ -62,7 +62,7 @@ Different models analysed:
 - Decision Trees
 - Random forest
 
-![Models Trail Summary](https://github.com/Gunnika/Reddit-Flair-Detector/blob/master/Images/train.png)
+![Models Trail Summary](https://github.com/Rajeev095/Reddit-Flair-Detector/blob/main/Images/train.png)
 
 
 The best results were obtained using Random Forest (62.67%)
@@ -73,7 +73,7 @@ A flask application was developed in which the trained model was integrated. An 
 
 ### Deploying as a Web Service
 The application was then deployed to Heroku. 
-![Web App](https://github.com/Gunnika/Reddit-Flair-Detector/blob/master/Images/webapp.png)
+![Web App](https://github.com/Rajeev095/Reddit-Flair-Detector/blob/main/Images/webapp.png)
 
 ### Automated Testing
 A POST Request with key as upload_file and value as a text file consisting of URLs can be sent to https://redditflair-detector.herokuapp.com/automated_testing.
