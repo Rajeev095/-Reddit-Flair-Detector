@@ -7,7 +7,7 @@ The application can be found live at [Reddit Flair Detector](https://redditflair
 1. Download Git Large File Storage (LFS) from https://git-lfs.github.com/ if you don't have it already.
 2. Open the Terminal.
 3. Use ``` git lfs install ``` to set up Git LFS for your user account.
-4. Clone the repository by typing ``` git clone https://github.com/Gunnika/Reddit-Flair-Detector.git ```.
+4. Clone the repository by typing ``` git clone https://github.com/Rajeev095/Reddit-Flair-Detector.git ```.
 5. Ensure that Python3 and pip are installed on the device.
 6. Change to the cloned directory by entering ```cd Reddit-Flair-Detector ```.
 7. Run ```pip install -r requirements.txt```.
@@ -25,7 +25,7 @@ The application can be found live at [Reddit Flair Detector](https://redditflair
 0. [Deploying as a Web Service](#deploying-as-a-web-service)
 0. [Automated Testing](#automated-testing)
 
-The whole process is nicely explained with code in this [Jupyter Notebook](https://github.com/Gunnika/Reddit-Flair-Detector/blob/master/Jupyter%20Notebooks/Reddit%20Flair%20Detector.ipynb).
+The whole process is nicely explained with code in this [Jupyter Notebook](https://github.com/Rajeev095/Reddit-Flair-Detector/blob/master/Jupyter%20Notebooks/Reddit%20Flair%20Detector.ipynb).
 
 ### Data Acquisition
 [PRAW: The Python Reddit API Wrapper](https://praw.readthedocs.io/en/latest/) was used for extracting data. There are a number of Reddit datasets available on Bigquery and Kaggle as well. 
