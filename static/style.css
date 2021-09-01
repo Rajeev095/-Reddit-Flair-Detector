@@ -1,0 +1,101 @@
+html {
+      box-sizing: border-box;
+    }
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      src: local("Open Sans"), local("OpenSans"),
+        url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2)
+          format("woff2");
+    }
+
+    body {
+      font-family: Open Sans;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar {
+      height: 8vh;
+      padding: 0 20px;
+      background: rgb(234, 234, 235);
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar > .icon {
+      font-size: 5vh;
+      color: #ff4500;
+    }
+
+    .fa-fire-alt {
+      color: orangered;
+    }
+
+    .navbar > .title {
+      font-size: 3vh;
+      margin: 0 20px;
+    }
+
+    .main-body {
+      height: 92vh;
+      background-color: #ee6e73;
+      padding-top: 100px;
+      display: flex;
+      justify-content: center;
+    }
+
+    input[type="search"] {
+      box-sizing: border-box;
+    }
+
+    .Search {
+      position: relative;
+    }
+
+    .Search-box {
+      margin: 0 12px;
+      padding: 5px 20px;
+      padding-right: 55px;
+      height: 60px;
+      width: 40vw;
+      border: 0;
+      font-size: 20px;
+      font-family: Open Sans;
+      border-radius: 20px;
+      box-shadow: 0 3px 12px -1px rgba(0, 0, 0, 0.3);
+      transition: all 0.5s ease-in;
+    }
+
+    ::placeholder {
+      opacity: 0.3;
+    }
+
+    span.fa {
+      position: absolute;
+      top: 50%;
+      right: 45px;
+      transform: translateY(-50%);
+      font-size: 120%;
+    }
+
+    .Search-box:focus {
+      outline: 0;
+      width: 60vw;
+    }
+
+    .results {
+      background: white;
+      padding: 50px;
+      border-radius: 5px;
+      width: 40vw;
+      margin: auto;
+      margin-top: 8vh;
+    }

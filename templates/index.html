@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"> -->
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/96aea49251.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Reddit Flair Detector</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="icon">
+        <i class="fab fa-reddit"></i>
+      </div>
+      <div class="title">Reddit Flair Detector</div>
+    </div>
+
+    <div class="main-body">
+      <div>
+        <div class="form-container">
+          <form action= "/" method="POST" class="Search">
+            <input
+              class = "Search-box"
+              type = "url"
+              placeholder = "Enter Post URL"
+              name = "posturl"
+            />
+            <span class="fa fa-search"></span>
+          </form>
+        </div>
+        {% if result %}
+          <div class="results">
+            
+                <p><i class="fas fa-fire-alt"></i> Detected Flair</p>
+                <h1>{{ result }}</h1>
+            
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+  </body>
+</html>
